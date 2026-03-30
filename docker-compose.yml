@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  text2pic:
+    image: text2pic
+    build: .
+    container_name: text2pic
+    restart: always
+    ports:
+      # 左边的主机端口可以根据您的实际需要修改 (防冲突，默认改用前端常用的 5173)
+      - "5173:80"
